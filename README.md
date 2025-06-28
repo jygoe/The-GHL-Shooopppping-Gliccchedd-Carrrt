@@ -76,18 +76,15 @@ The `ArrayList` class is used to manage dynamic collections of objects. It store
 The `Cart` class has an association with the `Customer` class. Each cart belongs to a specific customer and the customer is stored as a reference.
 
 **Example:**
-```java
-private Customer customer;
+```
+private Customer customer;```
 
-3.2.2 Aggregation
+#### 3.2.2 Aggregation
 The CartHistory class stores all Cart objects in an ArrayList. These carts can exist independently from the history, which shows a "has-a" but not "owns" relationship.
 
-Example:
-
-java
-Copy
-Edit
-private ArrayList<Cart> carts;
+**Example:
+**
+``` private ArrayList<Cart> carts;```
 3.2.3 Composition
 The Cart class holds selected items and variant indices. When a Cart is destroyed, its combination of items and selections no longer holds meaning.
 
