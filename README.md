@@ -48,11 +48,11 @@ The Online Shopping Cart System provides role-based functionality for both admin
 ### 2.2 Customer Functionalities
 
 - **Add Cart (Place Order)**  
-  Customers can view available items and their variants.  
-  Customers select items by their item ID and choose a variant.  
-  The system checks if the selected variant is in stock.  
-  Once confirmed, the item is added to the customer’s cart.  
-  Multiple items can be added before confirming the cart.
+  - Customers can view available items and their variants.  
+  - Customers select items by their item ID and choose a variant.  
+  - The system checks if the selected variant is in stock.  
+  - Once confirmed, the item is added to the customer’s cart.  
+  - Multiple items can be added before confirming the cart.
 
 ---
 
