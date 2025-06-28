@@ -8,8 +8,8 @@
 
 This project is a console-based online shopping cart system built in Java. It supports:
 
-- **Customers**: Browse and add items to the shopping cart.  
-- **Administrators**: Manage items and view/update customer orders (shopping carts).
+- **Customers**: Browse and add items to the shopping cart  
+- **Administrators**: Manage items and view/update customer orders (shopping carts)
 
 The system uses object-oriented design principles to simulate real e-commerce scenarios and applies Java's collection framework and exception handling to enhance functionality and stability.
 
@@ -62,7 +62,7 @@ The Online Shopping Cart System provides role-based functionality for both admin
 
 The `ArrayList` class is used to manage dynamic collections of objects. It stores different objects such as users, items, and cart records without predefining the number of entries. The use of `ArrayList` allows the system to easily add, remove, and loop through elements.
 
-**Examples**:
+**Examples:**
 - `ArrayList<User> users`: stores both `Customer` and `Admin` accounts  
 - `ArrayList<Item> items`: stores the list of items  
 - `ArrayList<Integer> variantIndex`: stores selected variants of a product
@@ -71,53 +71,85 @@ The `ArrayList` class is used to manage dynamic collections of objects. It store
 
 ### 3.2 Chapter 6: Class Relationships
 
-#### 3.2.1 Association  
+#### 3.2.1 Association
+
 The `Cart` class has an association with the `Customer` class. Each cart belongs to a specific customer and the customer is stored as a reference.
 
-**Example**:
+**Example:**
 ```java
 private Customer customer;
 
-#### 3.2.2 Aggregation
+3.2.2 Aggregation
 The CartHistory class stores all Cart objects in an ArrayList. These carts can exist independently from the history, which shows a "has-a" but not "owns" relationship.
 
-**Example:
-**In CartHistory class, “private ArrayList<Cart> carts” exists.
+Example:
 
-#### 3.2.3 Composition
+java
+Copy
+Edit
+private ArrayList<Cart> carts;
+3.2.3 Composition
 The Cart class holds selected items and variant indices. When a Cart is destroyed, its combination of items and selections no longer holds meaning.
 
-**Example:
-**In Cart class, “private ArrayList<Item> items; private ArrayList<Integer> variantIndex;”
+Example:
 
-### 3.3 Chapter 7 Inheritance
+java
+Copy
+Edit
+private ArrayList<Item> items;
+private ArrayList<Integer> variantIndex;
+3.3 Chapter 7: Inheritance
 Inheritance is used in this system to promote code reuse and reduce redundancy. A base class User is defined with shared attributes and methods such as userId, password, and role. The Customer and Admin classes extend the User class to inherit these common features.
 
-**Example:
-**class User {
+Example:
+
+java
+Copy
+Edit
+class User {
     protected String userId;
     protected String password;
     protected int role;
     ...
 }
+
 class Customer extends User { ... }
 class Admin extends User { ... }
+3.4 Chapter 8: Polymorphism
+Polymorphism allows a single variable of a superclass type to refer to objects of different subclasses. In this system, both Customer and Admin objects are stored in an ArrayList<User>.
 
-### 3.4 Chapter 8 Polymorphism
-Polymorphism allows a single variable of a superclass type to refer to objects of different subclasses. In this system, both Customer and Admin objects are stored in an ArrayList<User>. 
+Example:
 
-**Example:
-**ArrayList<User> users = new ArrayList<>();
+java
+Copy
+Edit
+ArrayList<User> users = new ArrayList<>();
 users.add(new Customer("C1", "123"));
 users.add(new Admin("A1", "123"));
+The system uses user.getRole() to determine whether the logged-in user is a customer or an admin and responds accordingly. This is an example of runtime polymorphism.
 
-### 3.5 Chapter 9 Exception Handling
+3.5 Chapter 9: Exception Handling
 Exception handling is used in the program to manage errors that occur during user input. This prevents the program from crashing and improves user experience. try-catch blocks are used to catch exceptions such as InputMismatchException and NumberFormatException.
 
-**Example: 
-**try {
+Example:
+
+java
+Copy
+Edit
+try {
     choice = scanner.nextInt();
     scanner.nextLine();
 } catch (InputMismatchException e) {
     System.out.println("Invalid input. Please enter a number.");
-    scanner.nextLine(); }
+    scanner.nextLine();
+}
+This ensures that if a user enters invalid input (such as a letter when a number is expected), the system will display an error message and continue running.
+
+vbnet
+Copy
+Edit
+
+Let me know if you want me to:
+- Export this into an actual `README.md` file for download
+- Add a UML diagram section
+- Include instructions for how to compile and run the code in terminal
