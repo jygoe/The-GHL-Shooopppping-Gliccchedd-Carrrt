@@ -34,7 +34,7 @@ The Online Shopping Cart System provides role-based functionality for both admin
   Each item shows its ID, name, description, variants, price, and quantity.
 
 - **Update Items**  
-  Admins can select an item by ID and:  
+  - Admins can select an item by ID and:  
   - Change the item’s name, OR  
   - Change the item’s description, OR  
   - Update a specific variant (name, price, quantity), OR  
