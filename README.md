@@ -22,16 +22,16 @@ The Online Shopping Cart System provides role-based functionality for both admin
 ### 2.1 Admin Functionalities
 
 - **View All Carts**  
-  Admins can view all shopping carts created by customers.  
-  Each cart displays customer ID, item IDs, names, variant details, prices, and status.
+  - Admins can view all shopping carts created by customers.  
+  - Each cart displays customer ID, item IDs, names, variant details, prices, and status.
 
 - **Update Cart Status**  
-  Admins can select a cart by its ID and update its status.  
-  Each cart’s status can be changed to either **Processing**, **Shipped**, or **Completed**.
+  - Admins can select a cart by its ID and update its status.  
+  - Each cart’s status can be changed to either **Processing**, **Shipped**, or **Completed**.
 
 - **View Items**  
-  Admins can view the item catalog in a table format.  
-  Each item shows its ID, name, description, variants, price, and quantity.
+  - Admins can view the item catalog in a table format.  
+  - Each item shows its ID, name, description, variants, price, and quantity.
 
 - **Update Items**  
   - Admins can select an item by ID and:  
@@ -151,3 +151,9 @@ try {
 ```
 
 This ensures that if a user enters invalid input (such as a letter when a number is expected), the system will display an error message and continue running.
+
+## 4.0 UML Class Diagram
+<figure>
+<figcaption>Class Diagram for Online Shopping Cart System<figcaption>
+    <img src="/OOP Project Class Diagram.png">
+</figure>
