@@ -1,6 +1,6 @@
 # Online Shopping Cart System  
 **Goe Jie Ying (A23CS0224)**  
-**Lam Yoke Yu (A23CS0233)**
+**Lam Yoke Yu (A23CS0233)**  
 [Video Presentation Link](https://drive.google.com/file/d/17-Dbb2TPiXqPb0uQNWTDTSZNkf_Hsoqc/view?usp=sharing)
 ---
 
